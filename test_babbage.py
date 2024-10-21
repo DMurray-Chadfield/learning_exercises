@@ -58,7 +58,7 @@ class TestBabbage(unittest.TestCase):
         1000000
     ]
 
-    for i in range(1):
+    for i in range(10):
         int = random.randrange(0, lb.to_number([9]*39))
         multi_digit_accs.append(int)
 
@@ -92,6 +92,16 @@ class TestBabbage(unittest.TestCase):
                         f"Failed case: {acc} + {op}"
                     )
 
+    def test_long_addition(self):
+        for op in self.multi_digit_ops:
+            for acc in self.multi_digit_accs:
+                with self.subTest():
+                    self.assertEqual(
+                        lb.perform_long_subtraction(op, acc),
+                        (0, op + acc, 0),
+                        f"Failed case: {acc} + {op}"
+                    )
+
 if __name__ == "__main__":
-#    print(lb.perform_long_addition(50, 663544723749685331961339012813047615568))
-    unittest.main()
+    print(lb.perform_long_subtraction(9, 5))
+#    unittest.main()

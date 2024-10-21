@@ -36,19 +36,13 @@ def perform_long_addition(add, acc):
 
 
 def perform_long_subtraction(sub, acc):
-    print(f"\nSUBTRACTING {sub} FROM {acc}")
-    sub_list, acc_list, most_digits = format_numbers(add, acc)
+    sub_list, acc_list, most_digits = format_numbers(sub, acc)
     carry_list = [1] * max_digits
-    print()
     for i in range(most_digits):
-        b.display_values(sub_list[i], acc_list[i], carry_list[i])
         sub_list[i], acc_list[i], carry_list[i + 1] = b.perform_babbage_subtraction(sub_list[i], acc_list[i], carry_list[i])
         carry_list[i] = 1
-        b.display_values(sub_list[i], acc_list[i], carry_list[i])
-        print()
 
-    print()
-    b.display_values(to_number(sub_list), to_number(acc_list), to_number(carry_list))
+    return to_number(sub_list), to_number(acc_list), to_number(carry_list)
 
 if __name__ == "__main__":
 
