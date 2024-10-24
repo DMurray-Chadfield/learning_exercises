@@ -1,0 +1,128 @@
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    margin: 0;
+    font-size: 50px;
+  }
+  
+body {
+    font-family: 'Belgrano', serif;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+  
+header {
+    border-bottom: 3px solid black;
+    text-align: left;
+    justify-content: space-between;
+}
+
+header, footer {
+    background-color: #3d4bc2;
+    color: #c2b43d;
+}
+
+header, .footer-container {
+    display: flex;
+}
+
+.footer-container {
+    justify-content: space-around;
+}
+
+header h3 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.facilities-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.facility-box {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.facility-box img {
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+section {
+    border-bottom: 3px double black;
+}
+
+.description p {
+    max-width: 70%;
+    margin: auto;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    margin: auto 10px;
+    padding: 20px 20px;
+    background-color: #3984c6;
+    border-radius: 10%;
+    max-width: 30%;
+    border: 1px solid black;
+}
+
+nav div h3 {
+    padding: 0;
+}
+
+.titles {
+    margin-left: 20px;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.staff-box {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.staff-box img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+.address {
+    text-align: left;
+}
+
+.details {
+    text-align: right;
+    margin: auto 0;
+}
+
+footer {
+    padding: 10px 0;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration-line: none;
+  }
