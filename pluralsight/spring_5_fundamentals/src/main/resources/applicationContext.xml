@@ -10,6 +10,8 @@
         name="speakerService"
         class="com.pluralsight.service.SpeakerServiceImpl"
     >
-        <property name="speakerRepository" ref="speakerRepository" />
+        <!--<property name="speakerRepository" ref="speakerRepository" />-->
+        <constructor-arg index="0" ref="speakerRepository" />
+
     </bean>
 </beans>
